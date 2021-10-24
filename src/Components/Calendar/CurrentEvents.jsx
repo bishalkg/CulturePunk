@@ -5,7 +5,7 @@ const CurrentEvents = () => {
   const [currentEvent, setCurrentEvent] = useState([]);
 
   return (
-    <div>
+    <div style={{ color: 'whitesmoke' }}>
       Current Events
     </div>
   );

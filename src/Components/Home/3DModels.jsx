@@ -8,7 +8,7 @@ export const Model = ({ url, scale, position }) => {
   const myModel = useRef();
 
   useFrame(({ clock }) => {
-    myModel.current.position.y = Math.sin(3 * clock.getElapsedTime()) * 0.03;
+    // myModel.current.position.y = Math.sin(3 * clock.getElapsedTime()) * 0.03;
   });
   return (
     <primitive ref={myModel} object={gltf.scene} scale={scale} position={position} />
@@ -22,7 +22,7 @@ export const Coin = ({ url, scale, position }) => {
   const myModel = useRef();
 
   useFrame(({ clock }) => {
-    myModel.current.position.y = Math.sin(3 * clock.getElapsedTime()) * 0.03;
+    // myModel.current.position.y = Math.sin(3 * clock.getElapsedTime()) * 0.03;
   });
   return (
     <primitive ref={myModel} object={scene} scale={scale} position={position} />

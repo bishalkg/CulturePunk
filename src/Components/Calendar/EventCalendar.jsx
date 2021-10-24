@@ -114,7 +114,7 @@ const EventCalendar = () => {
 
   return (
     <div className="calendar" style={{ padding: '150px' }}>
-      <h1 className="title" style={{ color: 'black', fontWeight: 'bold' }}>CulturePunk Event Calendar</h1>
+      <h1 className="title" style={{ color: 'whitesmoke', fontWeight: 'bold' }}>CulturePunk Event Calendar</h1>
 
       {/* <div className="event-carousel" style={{ margin: '150px' }}> */}
       <div className="event-carousel">
@@ -130,7 +130,9 @@ const EventCalendar = () => {
           id="outlined-basic"
           label="Add Event Title"
           variant="outlined"
-          style={{ width: '20%', marginRight: '10px', marginTop: '20px' }}
+          style={{
+            width: '20%', marginRight: '10px', marginTop: '20px', backgroundColor: 'whitesmoke',
+          }}
           value={newEvent.title}
           sx={{ boxShadow: 1 }}
           onChange={(e) => setNewEvent({ ...newEvent, title: e.target.value })}
@@ -176,7 +178,14 @@ const EventCalendar = () => {
           </LocalizationProvider>
         </div>
 
-        <Button variant="outlined" sx={{ boxShadow: 3 }} style={{ padding: '10px 30px 10px 30px', fontSize: '16px', fontWeight: 'bold' }} onClick={handleAddEvent}>
+        <Button
+          variant="outlined"
+          sx={{ boxShadow: 3 }}
+          style={{
+            padding: '10px 30px 10px 30px', fontSize: '16px', fontWeight: 'bold', backgroundColor: 'whitesmoke',
+          }}
+          onClick={handleAddEvent}
+        >
           Submit
         </Button>
       </div>

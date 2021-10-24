@@ -50,13 +50,11 @@ export default function LandingCard({ src }) {
               size="medium"
             >
               {showBuy ? 'BID NOW' : '100 ETH ($411,403)'}
-
             </Button>
-
           </Link>
         </CardActions>
       </Card>
-      <h1 className="spotlight-card-header">THIS WEEKS SPOTLIGHT</h1>
+      <h1 className="spotlight-card-header">SPOTLIGHT</h1>
     </div>
   );
 }
