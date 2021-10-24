@@ -9,7 +9,7 @@ import {useAppContext} from '../../ContextObj'; //use Auth context
 
 const backgroundStyles = {
   padding: '10vh',
-  backgroundImage: 'linear-gradient(225deg, rgba(238,53,32,.65), rgba(246,245,233,.1) 70.71%), linear-gradient(135deg, rgba(53,157,243,1), rgba(246,245,233,1) 70.71%)'
+  backgroundImage: 'linear-gradient(to bottom, #000000a8, #000000cf), url("/src/Components/Home/img/CPCity.jpg")',
 };
 
 const Signup = () => {
@@ -25,7 +25,8 @@ const Signup = () => {
     padding: 20,
     height: '80vh',
     width: 600,
-    margin: '20px auto',  
+    margin: '20px auto',
+    backgroundColor: 'whitesmoke',
   };
 
   const avatarStyle = {
@@ -55,7 +56,7 @@ const Signup = () => {
     }
     setLoading(false);
   };
-  
+
   return (
     <Grid style={backgroundStyles}>
       <Paper elevation={10} style={paperStyle}>
@@ -64,15 +65,15 @@ const Signup = () => {
           <h2>Sign Up</h2>
         </Grid>
         <form onSubmit={handleSubmit}>
-          <TextField label='Email'  inputRef={emailRef} fullWidth={true} required/>      
+          <TextField label='Email'  inputRef={emailRef} fullWidth={true} required/>
           <TextField type='password' label='Password'  inputRef={passwordRef} fullWidth={true} required/>
           <TextField type='password' label='Re-enter Password' inputRef={passwordConfirmRef} fullWidth={true} required/>
-          <Button disabled={loading} type='submit' color='primary' variant='contained' style={{marginTop: 20}} >Sign UP</Button> 
+          <Button disabled={loading} type='submit' color='primary' variant='contained' style={{marginTop: 20}} >Sign UP</Button>
         </form>
         <Grid style={{marginTop: '1vh'}}>
           Already have an account? <Link href='login'>Sign in</Link>
         </Grid>
-      </Paper>   
+      </Paper>
     </Grid>
   )
 };

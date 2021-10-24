@@ -79,7 +79,8 @@ button {
   "market-title-headers market-carousel"
   "market-sidebar market-product-list-container";
 
-  background-image: linear-gradient(225deg, rgba(238,53,32,.65), rgba(246,245,233,.1) 70.71%), linear-gradient(135deg, rgba(53,157,243,1), rgba(246,245,233,1) 70.71%);
+  /* background-image: linear-gradient(225deg, rgba(238,53,32,.65), rgba(246,245,233,.1) 70.71%), linear-gradient(135deg, rgba(53,157,243,1), rgba(246,245,233,1) 70.71%); */
+  background-image: linear-gradient(to bottom, #000000a8, #000000cf), url('/src/Components/Home/img/CPCity.jpg');
 
   column-gap: 100px;
   padding-right: 100px;
@@ -97,6 +98,7 @@ button {
   align-items: start;
   padding-left: 3em;
   padding-top: 6em;
+  color: whitesmoke;
 }
 
 .market-carousel{
@@ -110,16 +112,19 @@ button {
 
 .market-page h1, .market-page h2, .market-page h3, .market-page h4, .market-page h5, .market-page h6 {
   font-family: "PM-semi-bold";
+  color: whitesmoke;
 }
 
 .market-page h1 {
   font-family: PM-light-shadow;
   font-size: 3.5em;
+  color: whitesmoke;
 }
 
 .market-page h2 {
   font-size: 2.5em;
   padding: 0px;
+  color: whitesmoke;
 }
 
 .market-product-list-container {
@@ -145,6 +150,7 @@ button {
   position: fixed;
   top: 42em;
   height: 200px;
+  color: whitesmoke;
 }
 
 .market-product-list {

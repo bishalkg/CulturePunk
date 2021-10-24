@@ -16,14 +16,15 @@ const Login = () => {
 
   const backgroundStyles = {
     padding: '10vh',
-    backgroundImage: 'linear-gradient(225deg, rgba(238,53,32,.65), rgba(246,245,233,.1) 70.71%), linear-gradient(135deg, rgba(53,157,243,1), rgba(246,245,233,1) 70.71%)'
+    backgroundImage: 'linear-gradient(to bottom, #000000a8, #000000cf), url("/src/Components/Home/img/CPCity.jpg")',
   };
 
   const paperStyle = {
     padding: 20,
     height: '80vh',
     width: 600,
-    margin: '20px auto',  
+    margin: '20px auto',
+    backgroundColor: 'whitesmoke',
   };
 
   const avatarStyle = {
@@ -32,7 +33,7 @@ const Login = () => {
 
   async function handleSubmit(e) {
     e.preventDefault();
-  
+
     // sign in an existing user
     try {
       setError('');
@@ -43,7 +44,7 @@ const Login = () => {
     } catch(error) {
       setError('Failed to sign in to account.');
     }
-    
+
   };
   return (
     <Grid style={backgroundStyles}>
@@ -52,7 +53,7 @@ const Login = () => {
         <Avatar style={avatarStyle}><LockIcon /></Avatar>
         <h2>Sign In</h2>
       </Grid>
-      
+
       <form onSubmit={handleSubmit}>
         <TextField label='Email' inputRef={emailRef} fullWidth={true} required/>
         <TextField type='password' inputRef={passwordRef} label='Password' fullWidth={true} required/>
@@ -60,19 +61,19 @@ const Login = () => {
           <FormControlLabel
             control={
               <Checkbox name='rememberCheckBox' color='primary'/>
-            } 
+            }
             label="Remember me"
           />
         </Grid>
-        
+
         <Typography align='left'>
           <Link href='/resetpassword'>Forget password</Link>
         </Typography>
         <Typography align='left'>
-          Need an account?  
+          Need an account?
           <Link href='/signup'>Sign Up</Link>
         </Typography>
-        <Button type='submit' color='primary' fullWidth={true} variant='contained' style={{marginTop: 20}}>sign in</Button> 
+        <Button type='submit' color='primary' fullWidth={true} variant='contained' style={{marginTop: 20}}>sign in</Button>
       </form>
       </Paper>
     </Grid>
