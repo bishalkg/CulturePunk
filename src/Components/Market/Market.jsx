@@ -62,7 +62,7 @@ function Market() {
     <div className="market-page">
       <header className="market-header" />
       <div className="market-headers">
-        <h1 className="market-title-brand">.Culture.Punk.</h1>
+        <h1 className="market-title-brand">.Culture Punk.</h1>
         <h2 className="market-title-page">
           N.F.T.
           <br />
