@@ -4,7 +4,7 @@
   "description": "A marketplace for NFTs and livestreaming events",
   "main": "index.js",
   "scripts": {
-    "dev:node": "nodemon server/server.js",
+    "dev:node": "node server/server.js",
     "dev:vite": "vite",
     "build": "vite build",
     "serve": "vite preview",
