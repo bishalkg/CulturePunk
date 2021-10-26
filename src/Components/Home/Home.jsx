@@ -43,18 +43,19 @@ const Home = () => {
           <p className="landing-sub-heading">A new kind of art access for a new world of virtual community.</p>
         </h2>
         <p className="byline-statement">
-          By honoring our collective lived experiences
-          in a virtual world, we re-imagine an art space that operates to serve and see everyone.
+          {/* By honoring our collective lived experiences
+          in a virtual world, we re-imagine an art space that operates to serve and see everyone. */}
+          For artists. By artists.
           {' '}
           <br />
           {' '}
         </p>
-        <p style={{ fontFamily: 'PM-light-shadow', fontSize: '3vw', color: 'white' }}>
-          <em>We are artists.</em>
+        <p style={{ fontFamily: 'PM-semi-bold', fontSize: '2vw', color: 'white' }}>
+          {/* <em>For artists.</em>
           {' '}
           <br />
           {' '}
-          <em>We are you.</em>
+          <em>By Artists.</em> */}
         </p>
         <Link to="/signup" style={{ position: 'absolute', bottom: '0vh', left: '0vw' }}><UnstyledButtonCustom /></Link>
       </div>
@@ -78,12 +79,12 @@ const Home = () => {
           className="home-carousel-banner"
           style={{ fontFamily: 'PM-semi-bold', fontSize: '3vw', color: 'white', marginTop: 0 }}
         >
-          New Releases
+          Upcoming Events
 
         </h2>
-        <ExpandableCarousel slideSelect={0} />
+        <ExpandableCarousel slideSelect={3} />
         <h2 className="home-carousel-banner" style={{ fontFamily: 'PM-semi-bold', fontSize: '3vw', color: 'white' }}>Trending</h2>
-        <ExpandableCarousel slideSelect={1} />
+        <ExpandableCarousel slideSelect={5} />
       </div>
       <div
         className="home-section home-sec-4"

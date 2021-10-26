@@ -14,12 +14,6 @@ const BasicTile = ({
 }) => (
   <div className="BasicTile">
     <Card sx={{ maxWidth: 400 }}>
-      {/* <CardMedia
-        component="img"
-        height="350"
-        image={img}
-        alt={imgAlt}
-      /> */}
       {children}
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">

@@ -27,7 +27,7 @@ export default [
     // bkg: 'https://media.istockphoto.com/photos/white-studio-background-picture-id1040250650?k=20&m=1040250650&s=612x612&w=0&h=lEWpioJ3jet0QIZVBoU2Ygaua8YMHFfHN1mvT28xRZ4=',
     title: 'Product Drop 2',
     subtitle: 'Rainbow Pokemon #003 Venusaur',
-    description: 'A bewitching aroma wafts from its flower. The fragrance becalms those engaged in a battle. Its plant blooms when it is absorbing solar energy.',
+    description: 'A bewitching aroma wafts from its flower. The fragrance becalms those engaged in a battle.',
     image: 'http://lh3.googleusercontent.com/Pt8lrrtbLWYi_B5MsCl8EpnNDHpiOcyVw6TIp828CXfW1bQ39ijZfyYLJvhd8JEfveoV12YQNxCmyZXsb_P0yNBWjhKUw_gKidoZdws=w600',
     bkg: 'https://media.istockphoto.com/photos/white-studio-background-picture-id1040250650?k=20&m=1040250650&s=612x612&w=0&h=lEWpioJ3jet0QIZVBoU2Ygaua8YMHFfHN1mvT28xRZ4=',
   },
