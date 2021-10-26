@@ -26,7 +26,6 @@ const Player = () => {
   useEffect(() => {
     const { ENDED, PLAYING, READY } = PlayerState;
     const { ERROR } = PlayerEventType;
-    console.log(IVSPlayer);
 
     if (!isPlayerSupported) {
       console.warn(
@@ -70,7 +69,7 @@ const Player = () => {
   }
 
   return (
-    <div style={{ display: 'flex', alignItems: 'center', margin: '10px' }} className="Player">
+    <div style={{ display: 'flex', alignItems: 'center', margin: '100px' }} className="Player">
       <video style={{ height: '450px' }} ref={videoEl} controls playsInline><track kind="captions" /></video>
     </div>
   );

@@ -176,7 +176,21 @@ div#spotlight-canvas:active {
 
 .spotlight-card-header {
   font-family: "PM-regular";
-  color: whitesmoke;
+  /* color: whitesmoke; */
+  font-size: 40px;
+  font-family: "PM-semi-bold";
+  font-size: 40px;
+  /* animation: pulsate 1.5s ease-in-out infinite alternate; */
+  text-shadow:
+  0 0 4px #fff,
+  0 0 11px #fff,
+  0 0 19px #fff,
+  0 0 40px #77CD80,
+  /* 0 0 80px #77CD80,
+  0 0 90px #77CD80, */
+  0 0 100px #77CD80,
+  0 0 150px #77CD80;
+  color: #00B975;
 }
 
 .home-carousel-banner {

@@ -44,7 +44,7 @@ export default function LandingCard({ src }) {
         <CardActions style={{ 'justify-content': 'center' }}>
           <Link to="livestream">
             <Button
-              style={{ 'font-family': 'PM-semi-bold', 'font-size': '1.0vw', color: '#b88cd4' }}
+              style={{ fontFamily: 'PM-semi-bold', fontSize: '1.0vw', color: '#b88cd4',  textDecoration: 'overline black', }}
               onMouseEnter={() => setShowBuy(!showBuy)}
               onMouseLeave={() => setShowBuy(!showBuy)}
               size="medium"

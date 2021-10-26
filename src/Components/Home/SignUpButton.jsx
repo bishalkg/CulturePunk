@@ -121,6 +121,7 @@ export default function UnstyledButtonCustom() {
       '--main-color': 'rgb(255 255 255)',
       '--hover-color': 'rgb(186 160 215 / 61%)',
       '--active-color': 'rgb(174 140 212)',
+
     }}
     >
       Sign Up
