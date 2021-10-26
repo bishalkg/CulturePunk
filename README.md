@@ -9,7 +9,6 @@ The page is divided into four sections and includes:
 * A section showing the current product drop and the livestream to auction off that product, showcasing the core livestream auction feature of the application soon after a user enters the app
 * A section that showcases a creative, expandable, carousel of upcoming events, which the user can sign up for on the calendar page. It also includes a carousel of trending art pieces. 
 * The final section is an informative embedded youtube video that allows the users/artists to learn more about NFTs and get up to speed on how they can sell their artwork with digital transactions.
-* 
 <p
   align="center">
   <img
