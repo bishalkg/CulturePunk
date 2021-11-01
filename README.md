@@ -114,6 +114,8 @@ Events Calendar section displays a calendar list of product drops and auctions. 
 
 ### Livestream
 
+The livestream player seen here and on the home page is using AWS IVS Player. The channel is configured to use ultra-low latency and can be configured to save playbacks to an S3 bucket. It is also configured that anyone with access to the stream key can stream from their local machine. The streamUrl in the Player component can be replaced with any AWS IVS Player link.
+
 ### Gallery
 
 In the NFT Art Gallery users can browse through selected works sourced from the OpenSea API. The work can be ordered by Last Sale, Token ID, or Number of Sales.
@@ -133,6 +135,9 @@ Chat and Auction section uses React Hooks and React Context to allow logged-in u
 
 ### Profile
 
+The Profile page uses React Context to display information for the select user, including social media links, events, and statistics. Users who list themselves as a Creator can display a Gallery of their work in a carousel, those with the Connoisseur descriptor show a Collection of purchased work, and users described as both display both.
+
+Using CSS 3D, scrolling down causes the user's information to float backward as the art moves into view.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -146,7 +151,7 @@ Chat and Auction section uses React Hooks and React Context to allow logged-in u
   * Tech Stack Architect
   * Livestream
 * [Bishal Gautam]() -
-  * UI Design Lead
+  * UI Design Lead & Software Engineer
   * Homepage
 * [Caleb Kim]() -
   * Live Chat
